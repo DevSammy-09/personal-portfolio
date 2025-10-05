@@ -376,7 +376,7 @@ button:active{
     transform: translateY(-7px);
 }
 
-@media (max-width:430px) {
+@media (max-width:720px) {
 
     #nav-container{
         width: 100%;
