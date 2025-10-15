@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header id="nav-container">
+    <nav class="nav-container">
         <h1>Dev-Sammy</h1>
         <ul class="nav-menu">
             <a href="#">Home</a></li>
@@ -16,30 +16,39 @@
             <a href="#portfolio-page">Portfolio</a></li>
             <a href="#contact-page">Contact</a></li>
         </ul>
-        <i class="fa-solid fa-bars"></i>
-    </header>
-
-    <section id="hero">
+        <i class="fa-solid fa-bars" id="toggleBtn"></i>
+    </nav>
+    <nav id="sideBar">
+        <i class="fa-solid fa-times" id="cancelBtn"></i>
+        <ul class="sideBar-menu">
+            <a href="#">Home</a></li>
+            <a href="#about-page">About</a></li>
+            <a href="#portfolio-page">Portfolio</a></li>
+            <a href="#contact-page">Contact</a></li>
+        </ul>
+        
+    </nav>
+    <header id="home">
         <div class="hero1">
-            <h2>Hello,<br> I'm <span>Samuel Akinkuade</span> </h2>
-            <p>I'm a Full-stack Web Developer. I create responsive and fully functional websites with users in mind and code with passion.</p>
-            <button>Download CV</button>
-            <div class="icon">
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-discord"></i>
-                <i class="fa-brands fa-github"></i>
-            </div>
+        <h2>Hello,<br> I'm <span>Samuel Akinkuade</span> </h2>
+        <p>I'm a Full-stack Web Developer. I create responsive and fully functional websites with users in mind and code with passion.</p>
+        <button>Download CV</button>
+        <div class="icon">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-github"></i>
         </div>
-        <img src="images/image.jpg" alt="image" width="350px" height="350px">
-    </section>
-
+    </div>
+    <img src="images/image.jpg" alt="image" width="350px" height="350px">
+    </header>
+    
     <section id="about-page">
         <img class="about-pic" src="images/img 2.jpg" alt="pic of web dev" width="400px" height="400px">
         <div class="about">
             <h2>About Me</h2>
-            <p>Hi, I'm Samuel Akinkuade. I'm a <b>student</b> and a <b> Web Developer</b>. I decided to become a Web Developer because of how cool it is to bring your imagination to reality. I completed HTML course and presently learning CSS before moving to Javascript. I love watching movies, playing games and coding during my leisure. Before i go, My advice to young and upcoming Web Developer like me is <em>"Just stay consistent and imposter syndrome is real"</em></p>
+            <p>Hi, I'm Samuel Akinkuade. I'm a <b>student</b> and a <b> Web Developer</b>. I decided to become a Web Developer because of how cool it is to bring your imagination to reality. I completed HTML and CSS course and currently learning Javascript. I love watching movies, playing games and coding during my leisure. My advice to young Web Developer is <em>"Just stay consistent and imposter syndrome is real"</em></p>
         </div>
     </section>
 
@@ -65,7 +74,6 @@
     <article id="contact-page">
         <div class="contact-container">
             <h1>Contact</h1>
-            <h2>Send Me Your Message</h2>
             <form action="">
                 <div class="input-box">
                     <label for="username" >Username</label>
@@ -94,5 +102,23 @@
             <i class="fa-brands fa-github"></i>
         </div>
     </footer>
+    <script>
+        const toggleBtn = document.getElementById("toggleBtn");
+        const sideBar = document.getElementById("sideBar");
+        const cancelBtn = document.getElementById("cancelBtn");
+        const body = document.getElementById("home");
+
+        toggleBtn.addEventListener("click", ()=> {
+            sideBar.style.display = "flex";
+        });
+
+        cancelBtn.addEventListener("click", ()=> {
+            sideBar.style.display = "none";
+        });
+
+        home.addEventListener("click", ()=> {
+            sideBar.style.display = "none";
+        });
+    </script>
 </body>
 </html>
