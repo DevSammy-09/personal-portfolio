@@ -334,7 +334,7 @@ body{
 
 .input-box input{
     background-color: white;
-    border: none;
+    border: 1px solid black;
     width: 100%;
     height: 35px;
     border-radius: 17px;
@@ -423,6 +423,10 @@ button:active{
 @media (max-width:1124px){
     .nav-menu{
         gap: 60px;
+    }
+
+    #home{
+        height: 100vh;
     }
 
     #home .hero1 h2{
@@ -520,7 +524,16 @@ button:active{
 
 @media (max-width:902px){
     .nav-menu{
+        margin-right: 30px;
         gap: 40px;
+    }
+
+    .nav-container h1{
+        margin-left: 30px;
+    }
+
+    #home .hero1{
+        margin-left: 30px;
     }
 
     #home .hero1 h2{
@@ -564,7 +577,7 @@ button:active{
     }
     
     #about-page .about p {
-        width: 400px;
+        width: 450px;
         font-size: 20px;
         line-height: 30px;
     }
@@ -574,8 +587,8 @@ button:active{
     }
 
     #portfolio-page .portfolio-container .flex1 img{
-        width: 370px;
-        height: 170px;
+        width: 400px;
+        height: 180px;
     }
 
     .contact-container{
@@ -585,64 +598,25 @@ button:active{
     .contact-container h1{
         font-size: 32px;
     }
-}
 
-@media (max-width:902px){
-    #home .hero1 h2{
-        font-size: 33px;
-        line-height: 45px;
+    #footer p{
+        margin-left: 30px;
     }
 
-    #home .hero1 .icon{
-        gap: 15px;  
-    }
-
-    #home .hero1 .icon i{
-        font-size: 19px;
-    }
-
-    #home .hero1 p{
-        font-size: 21px;
-        width: 400px;
-        margin-top: 8px;
-    }
-    
-    #home .hero1 p{
-        font-size: 17px;
-        width: 255px;
-        margin-top: 6px;
-        line-height: 28px;
-    }
-
-    #home .hero1 h2{
-        font-size: 20px;
-        line-height: 35px;
-    }
-
-    #home .hero1 .icon{
-        margin-top: 15px;
-        gap: 10px;  
-    }
-
-    #home button{
-        margin-top: 10px;
-        width: 120px;
-        height: 27px;
-        font-size: 14px;
-    }
-    
-    .contact-container h1{
-        font-size: 32px;
+    #footer icon{
+        margin-right: 30px;
     }
 }
 
 @media (max-width:720px){
     .nav-menu{
+        margin-right: 25px;
         gap: 35px;
     }
 
     .nav-container h1{
-        font-size: 27px;
+        font-size: 25px;
+        margin-left: 25px;
     }
 
     #home .hero1 h2{
@@ -665,6 +639,7 @@ button:active{
     }
     
     #home img{
+        margin-right: 30px;
         width: 230px;
         height: 230px;
     }
@@ -679,14 +654,14 @@ button:active{
     }
 
     #about-page .about p {
-        width: 350px;
-        font-size: 17px;
-        line-height: 27px;
+        width: 370px;
+        font-size: 17.5px;
+        line-height: 30px;
     }
 
     #portfolio-page .portfolio-container .flex1 img{
-        width: 300px;
-        height: 170px;
+        width: 318px;
+        height: 180px;
     }
 
     .contact-container{
@@ -696,19 +671,45 @@ button:active{
     .contact-container h1{
         font-size: 32px;
     }
+
+    #footer p{
+        margin-left: 25px;
+    }
+
+    #footer .icon{
+        margin-right: 25px;
+    }
 }
 
 @media (max-width:622px){
     #sideBar{
-        width: 40%;
+        width: 45%;
+        gap: 70px;
+    }
+
+    #sideBar i{
+        margin-left: 95px;
+        margin-top: 20px;
+    }
+
+    #sideBar .sideBar-menu{
+        gap: 40px;
     }
 
     .nav-menu{
         display: none;
     }
 
+    .nav-container h1{
+        margin-left: 20px;
+    }
     .nav-container i{
         display: block;
+        margin-right: 20px;
+    }
+
+    #home .hero1{
+        margin-left: 20px;
     }
 
     #home .hero1 h2{
@@ -725,15 +726,21 @@ button:active{
     }
 
     #home .hero1 p{
-        font-size: 17px;
-        width: 290px;
-        margin-top: 8px;
+        font-size: 18px;
+        width: 350px;
+        margin-top: 7px;
         line-height: 27px;
     }
     
     #home img{
-        width: 180px;
-        height: 180px;
+        margin-right: 30px;
+        width: 200px;
+        height: 200px;
+    }
+
+    #about-page{
+        gap: 5%;
+        height: 100vh;
     }
 
     .about-pic{
@@ -742,19 +749,33 @@ button:active{
     }
 
     #about-page .about p {
-        width: 320px;
-        font-size: 15px;
+        width: 330px;
+        font-size: 17px;
         line-height: 27px;
     }
 
 
     #portfolio-page .portfolio-container .flex1 img{
-        width: 270px;
-        height: 170px;
+        width: 276px;
+        height: 175px;
     }
 
     .contact-container{
         width: 380px;
+    }
+
+    #footer p{
+        margin-left: 20px;
+        font-size: 17px;
+    }
+
+    #footer .icon{
+        margin-right: 20px;
+        gap: 10px;
+    }
+
+    #footer .icon i{
+        font-size: 17px;
     }
 }
 
@@ -765,17 +786,27 @@ button:active{
 
     .nav-container h1{
         font-size: 25px;
+        margin-left: 20px;
+    }
+
+    .nav-container i{
+        margin-right: 20px;
     }
 
     #home{
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        gap: 20px;
-        height: 100vh;
+        height: 95vh;
+    }
+
+    #home .hero1{
+        margin-left: 20px;
     }
 
     #home .hero1 h2{
-        font-size: 25px;
+        font-size: 27px;
         line-height: 40px;
     }
 
@@ -788,19 +819,19 @@ button:active{
     }
 
     #home .hero1 p{
-        font-size: 17px;
-        width: 340px;
+        font-size: 20px;
+        width: 430px;
         margin-top: 8px;
         line-height: 28px;
     }
     
     #home img{
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
     #about-page{
-        height: 125vh;
+        height: 120vh;
         display: flex;
         flex-direction: column;
         gap: 6%;
@@ -821,8 +852,8 @@ button:active{
     }
 
     #about-page .about p {
-        width: 350px;
-        font-size: 15px;
+        width: 410px;
+        font-size: 16px;
         line-height: 27px;
     }
 
@@ -836,7 +867,7 @@ button:active{
     }
 
     #portfolio-page .portfolio-container .flex1 img{
-        width: 340px;
+        width: 410px;
         height: 170px;
     }
 
@@ -845,11 +876,13 @@ button:active{
     }
 
     #footer p{
+        margin-left: 20px;
         font-size: 14px;
     }
 
     #footer .icon{
         gap: 12px;
+        margin-right: 20px;
     }
 
     #footer .icon i{
@@ -863,19 +896,39 @@ button:active{
     }
 
     .nav-container h1{
-        font-size: 24px;
+        margin-left: 22px;
+        font-size: 20px;
+    }
+
+    .nav-container i{
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    #home{
+        height: 93vh;
+        display: flex;
+    }
+
+    #home .hero1{
+        margin-left: 20px;
     }
 
     #home .hero1 p{
         font-size: 17px;
-        width: 255px;
+        width: 320px;
         margin-top: 6px;
         line-height: 28px;
     }
 
     #home .hero1 h2{
-        font-size: 20px;
+        font-size: 26px;
         line-height: 35px;
+    }
+
+    #home img{
+        width: 220px;
+        height: 220px;
     }
 
     #home .hero1 .icon{
@@ -891,22 +944,26 @@ button:active{
     }
 
     #about-page{
-        height: 145vh;
+        height: 100vh;
     }
 
     #about-page .about p {
-        width: 230px;
+        width: 290px;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 25px;
     }
 
     #portfolio-page{
-        height: 160vh;
+        height: 120vh;
     }
 
     #portfolio-page .portfolio-container .flex1 img{
-        width: 260px;
+        width: 320px;
         height: 150px;
+    }
+
+    #contact-page{
+        height: 90vh;
     }
 
     .contact-container{
@@ -914,101 +971,12 @@ button:active{
     }
 
     #footer p{
+        margin-left: 20px;
         font-size: 12px;
     }
 
     #footer .icon{
+        margin-right: 20px;
         gap: 9px;
-    }
-}
-
-@media (max-width:480px){
-    .nav-container{
-        height: 55px;
-    }
-
-    .nav-container h1{
-        font-size: 18px;
-    }
-
-    .nav-container i{
-        font-size: 16px;
-    }
-
-    #home .hero1 p{
-        font-size: 15px;
-        width: 225px;
-        margin-top: 6px;
-        line-height: 28px;
-    }
-
-    #home .hero1 h2{
-        font-size: 20px;
-        line-height: 35px;
-    }
-
-    #home .hero1 .icon{
-        margin-top: 15px;
-        gap: 10px;  
-    }
-
-    #home button{
-        margin-top: 10px;
-        width: 120px;
-        height: 27px;
-        font-size: 14px;
-    }
-
-    #home .hero1 p{
-        font-size: 17px;
-        width: 255px;
-        margin-top: 6px;
-        line-height: 28px;
-    }
-
-    #home .hero1 h2{
-        font-size: 20px;
-        line-height: 35px;
-    }
-
-    #home .hero1 .icon{
-        margin-top: 15px;
-        gap: 10px;  
-    }
-
-    #home button{
-        margin-top: 10px;
-        width: 120px;
-        height: 27px;
-        font-size: 14px;
-    }
-
-    #home .hero1 p{
-        font-size: 17px;
-        width: 255px;
-        margin-top: 6px;
-        line-height: 28px;
-    }
-
-    #home .hero1 h2{
-        font-size: 20px;
-        line-height: 35px;
-    }
-
-    #home .hero1 .icon{
-        margin-top: 15px;
-        gap: 10px;  
-    }
-
-    #home button{
-        margin-top: 10px;
-        width: 120px;
-        height: 27px;
-        font-size: 14px;
-    }
-
-    #home img{
-        width: 180px;
-        height: 180px;
     }
 }
